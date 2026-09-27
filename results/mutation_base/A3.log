@@ -1,0 +1,18 @@
+....FF...                                                                [100%]
+=================================== FAILURES ===================================
+___________________________ test_a_base_05_multiply ____________________________
+tests/test_a_base.py:23: in test_a_base_05_multiply
+    assert calculator.multiply(3, 4) == 12
+E   AssertionError: assert 0.75 == 12
+E    +  where 0.75 = <function multiply at 0x7fae0233e700>(3, 4)
+E    +    where <function multiply at 0x7fae0233e700> = <module 'tested_calculator' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/A3/calculator.py'>.multiply
+___________________________ test_a_base_06_multiply ____________________________
+tests/test_a_base.py:27: in test_a_base_06_multiply
+    assert calculator.multiply(-2, 3) == -6
+E   AssertionError: assert -0.6666666666666666 == -6
+E    +  where -0.6666666666666666 = <function multiply at 0x7fae0233e700>(-2, 3)
+E    +    where <function multiply at 0x7fae0233e700> = <module 'tested_calculator' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/A3/calculator.py'>.multiply
+=========================== short test summary info ============================
+FAILED tests/test_a_base.py::test_a_base_05_multiply - AssertionError: assert...
+FAILED tests/test_a_base.py::test_a_base_06_multiply - AssertionError: assert...
+2 failed, 7 passed in 0.03s

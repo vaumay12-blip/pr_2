@@ -1,0 +1,22 @@
+.........FF......                                                        [100%]
+=================================== FAILURES ===================================
+____________________________ test_a_extra_01_divide ____________________________
+tests/test_a_extra.py:7: in test_a_extra_01_divide
+    assert calculator.divide(7, 2) == pytest.approx(3.5, rel=1e-9, abs=1e-9)
+E   assert 3 == 3.5 ± 3.5e-09
+E     
+E     comparison failed
+E     Obtained: 3
+E     Expected: 3.5 ± 3.5e-09
+____________________________ test_a_extra_02_divide ____________________________
+tests/test_a_extra.py:11: in test_a_extra_02_divide
+    assert calculator.divide(-7, 2) == pytest.approx(-3.5, rel=1e-9, abs=1e-9)
+E   assert -4 == -3.5 ± 3.5e-09
+E     
+E     comparison failed
+E     Obtained: -4
+E     Expected: -3.5 ± 3.5e-09
+=========================== short test summary info ============================
+FAILED tests/test_a_extra.py::test_a_extra_01_divide - assert 3 == 3.5 ± 3.5e-09
+FAILED tests/test_a_extra.py::test_a_extra_02_divide - assert -4 == -3.5 ± 3....
+2 failed, 15 passed in 0.04s

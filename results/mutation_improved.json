@@ -1,0 +1,274 @@
+{
+  "suite": "improved",
+  "total": 16,
+  "killed": 16,
+  "survived": 0,
+  "invalid": 0,
+  "score": 100.0,
+  "mutants": [
+    {
+      "status": "killed",
+      "tests": 17,
+      "failed": [
+        "test_a_base_01_add",
+        "test_a_base_02_add"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "A1",
+      "module": "calculator",
+      "function": "add",
+      "kind": "BinOp",
+      "old": "Add",
+      "new": "Sub"
+    },
+    {
+      "status": "killed",
+      "tests": 17,
+      "failed": [
+        "test_a_base_04_subtract",
+        "test_a_extra_07_subtract"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "A2",
+      "module": "calculator",
+      "function": "subtract",
+      "kind": "BinOp",
+      "old": "Sub",
+      "new": "Add"
+    },
+    {
+      "status": "killed",
+      "tests": 17,
+      "failed": [
+        "test_a_base_05_multiply",
+        "test_a_base_06_multiply"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "A3",
+      "module": "calculator",
+      "function": "multiply",
+      "kind": "BinOp",
+      "old": "Mult",
+      "new": "Div"
+    },
+    {
+      "status": "killed",
+      "tests": 17,
+      "failed": [
+        "test_a_extra_01_divide",
+        "test_a_extra_02_divide"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "A4",
+      "module": "calculator",
+      "function": "divide",
+      "kind": "BinOp",
+      "old": "Div",
+      "new": "FloorDiv"
+    },
+    {
+      "status": "killed",
+      "tests": 17,
+      "failed": [
+        "test_a_extra_03_power",
+        "test_a_extra_04_power",
+        "test_a_extra_05_power",
+        "test_a_extra_06_power"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "A5",
+      "module": "calculator",
+      "function": "power",
+      "kind": "BinOp",
+      "old": "Pow",
+      "new": "Mult"
+    },
+    {
+      "status": "killed",
+      "tests": 23,
+      "failed": [
+        "test_b_base_01_is_even",
+        "test_b_extra_06_is_even",
+        "test_b_extra_07_is_even",
+        "test_b_extra_08_is_even"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "B1",
+      "module": "number_filter",
+      "function": "is_even",
+      "kind": "Compare",
+      "old": "Eq",
+      "new": "NotEq"
+    },
+    {
+      "status": "killed",
+      "tests": 23,
+      "failed": [
+        "test_b_base_02_is_odd",
+        "test_b_base_03_is_odd",
+        "test_b_extra_09_is_odd",
+        "test_b_extra_10_is_odd"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "B2",
+      "module": "number_filter",
+      "function": "is_odd",
+      "kind": "Compare",
+      "old": "NotEq",
+      "new": "Eq"
+    },
+    {
+      "status": "killed",
+      "tests": 23,
+      "failed": [
+        "test_b_extra_01_is_prime"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "B3",
+      "module": "number_filter",
+      "function": "is_prime",
+      "kind": "Compare",
+      "old": "Lt",
+      "new": "LtE"
+    },
+    {
+      "status": "killed",
+      "tests": 23,
+      "failed": [
+        "test_b_base_07_find_max",
+        "test_b_base_08_find_max"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "B4",
+      "module": "number_filter",
+      "function": "find_max",
+      "kind": "Compare",
+      "old": "Gt",
+      "new": "Lt"
+    },
+    {
+      "status": "killed",
+      "tests": 23,
+      "failed": [
+        "test_b_extra_13_positive_numbers"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "B5",
+      "module": "number_filter",
+      "function": "positive_numbers",
+      "kind": "Compare",
+      "old": "Gt",
+      "new": "GtE"
+    },
+    {
+      "status": "killed",
+      "tests": 19,
+      "failed": [
+        "test_c_base_01_meters_to_kilometers",
+        "test_c_extra_05_meters_to_kilometers"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "C1",
+      "module": "converter",
+      "function": "meters_to_kilometers",
+      "kind": "BinOp",
+      "old": "Div",
+      "new": "Mult"
+    },
+    {
+      "status": "killed",
+      "tests": 19,
+      "failed": [
+        "test_c_base_03_kilometers_to_meters"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "C2",
+      "module": "converter",
+      "function": "kilometers_to_meters",
+      "kind": "BinOp",
+      "old": "Mult",
+      "new": "Div"
+    },
+    {
+      "status": "killed",
+      "tests": 19,
+      "failed": [
+        "test_c_base_05_kilograms_to_grams",
+        "test_c_extra_08_kilograms_to_grams"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "C3",
+      "module": "converter",
+      "function": "kilograms_to_grams",
+      "kind": "Constant",
+      "old": 1000,
+      "new": 100
+    },
+    {
+      "status": "killed",
+      "tests": 19,
+      "failed": [
+        "test_c_base_07_celsius_to_fahrenheit",
+        "test_c_extra_01_celsius_to_fahrenheit",
+        "test_c_extra_02_celsius_to_fahrenheit",
+        "test_c_extra_03_celsius_to_fahrenheit"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "C4",
+      "module": "converter",
+      "function": "celsius_to_fahrenheit",
+      "kind": "BinOp",
+      "old": "Add",
+      "new": "Sub"
+    },
+    {
+      "status": "killed",
+      "tests": 19,
+      "failed": [
+        "test_c_base_08_fahrenheit_to_celsius",
+        "test_c_base_09_fahrenheit_to_celsius",
+        "test_c_base_10_fahrenheit_to_celsius",
+        "test_c_extra_09_fahrenheit_to_celsius"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "C5",
+      "module": "converter",
+      "function": "fahrenheit_to_celsius",
+      "kind": "BinOp",
+      "old": "Sub",
+      "new": "Add"
+    },
+    {
+      "status": "killed",
+      "tests": 19,
+      "failed": [
+        "test_c_extra_01_celsius_to_fahrenheit",
+        "test_c_extra_02_celsius_to_fahrenheit",
+        "test_c_extra_03_celsius_to_fahrenheit"
+      ],
+      "errors": [],
+      "returncode": 1,
+      "id": "C6",
+      "module": "converter",
+      "function": "celsius_to_fahrenheit",
+      "kind": "Constant",
+      "old": 9,
+      "new": 10
+    }
+  ]
+}

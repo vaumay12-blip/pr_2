@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="17" time="0.053" timestamp="2026-09-27T13:55:28.285461+03:00" hostname="4c855abfa186"><testcase classname="tests.test_a_base" name="test_a_base_01_add" time="0.001" /><testcase classname="tests.test_a_base" name="test_a_base_02_add" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_03_add" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_04_subtract" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_05_multiply" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_06_multiply" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_07_divide" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_08_divide" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_09_power" time="0.000" /><testcase classname="tests.test_a_extra" name="test_a_extra_01_divide" time="0.000" /><testcase classname="tests.test_a_extra" name="test_a_extra_02_divide" time="0.000" /><testcase classname="tests.test_a_extra" name="test_a_extra_03_power" time="0.001"><failure message="AssertionError: assert 6 == 8&#10; +  where 6 = &lt;function power at 0x7f028d8172e0&gt;(2, 3)&#10; +    where &lt;function power at 0x7f028d8172e0&gt; = &lt;module 'tested_calculator' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/A5/calculator.py'&gt;.power">tests/test_a_extra.py:15: in test_a_extra_03_power
+    assert calculator.power(2, 3) == 8
+E   AssertionError: assert 6 == 8
+E    +  where 6 = &lt;function power at 0x7f028d8172e0&gt;(2, 3)
+E    +    where &lt;function power at 0x7f028d8172e0&gt; = &lt;module 'tested_calculator' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/A5/calculator.py'&gt;.power</failure></testcase><testcase classname="tests.test_a_extra" name="test_a_extra_04_power" time="0.000"><failure message="AssertionError: assert 0 == 1&#10; +  where 0 = &lt;function power at 0x7f028d8172e0&gt;(5, 0)&#10; +    where &lt;function power at 0x7f028d8172e0&gt; = &lt;module 'tested_calculator' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/A5/calculator.py'&gt;.power">tests/test_a_extra.py:19: in test_a_extra_04_power
+    assert calculator.power(5, 0) == 1
+E   AssertionError: assert 0 == 1
+E    +  where 0 = &lt;function power at 0x7f028d8172e0&gt;(5, 0)
+E    +    where &lt;function power at 0x7f028d8172e0&gt; = &lt;module 'tested_calculator' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/A5/calculator.py'&gt;.power</failure></testcase><testcase classname="tests.test_a_extra" name="test_a_extra_05_power" time="0.001"><failure message="assert -4 == 0.25 ± 1.0e-09&#10;  &#10;  comparison failed&#10;  Obtained: -4&#10;  Expected: 0.25 ± 1.0e-09">tests/test_a_extra.py:23: in test_a_extra_05_power
+    assert calculator.power(2, -2) == pytest.approx(0.25, rel=1e-9, abs=1e-9)
+E   assert -4 == 0.25 ± 1.0e-09
+E     
+E     comparison failed
+E     Obtained: -4
+E     Expected: 0.25 ± 1.0e-09</failure></testcase><testcase classname="tests.test_a_extra" name="test_a_extra_06_power" time="0.000"><failure message="Failed: DID NOT RAISE ZeroDivisionError">tests/test_a_extra.py:27: in test_a_extra_06_power
+    with pytest.raises(ZeroDivisionError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE ZeroDivisionError</failure></testcase><testcase classname="tests.test_a_extra" name="test_a_extra_07_subtract" time="0.000" /><testcase classname="tests.test_a_extra" name="test_a_extra_08_multiply" time="0.000" /></testsuite></testsuites>

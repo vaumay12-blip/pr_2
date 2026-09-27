@@ -1,0 +1,11 @@
+..........F............                                                  [100%]
+=================================== FAILURES ===================================
+___________________________ test_b_extra_01_is_prime ___________________________
+tests/test_b_extra.py:7: in test_b_extra_01_is_prime
+    assert number_filter.is_prime(2) is True
+E   AssertionError: assert False is True
+E    +  where False = <function is_prime at 0x7faf0054f6a0>(2)
+E    +    where <function is_prime at 0x7faf0054f6a0> = <module 'tested_number_filter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/B3/number_filter.py'>.is_prime
+=========================== short test summary info ============================
+FAILED tests/test_b_extra.py::test_b_extra_01_is_prime - AssertionError: asse...
+1 failed, 22 passed in 0.05s

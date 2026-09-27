@@ -1,0 +1,33 @@
+...........FFFF..                                                        [100%]
+=================================== FAILURES ===================================
+____________________________ test_a_extra_03_power _____________________________
+tests/test_a_extra.py:15: in test_a_extra_03_power
+    assert calculator.power(2, 3) == 8
+E   AssertionError: assert 6 == 8
+E    +  where 6 = <function power at 0x7f028d8172e0>(2, 3)
+E    +    where <function power at 0x7f028d8172e0> = <module 'tested_calculator' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/A5/calculator.py'>.power
+____________________________ test_a_extra_04_power _____________________________
+tests/test_a_extra.py:19: in test_a_extra_04_power
+    assert calculator.power(5, 0) == 1
+E   AssertionError: assert 0 == 1
+E    +  where 0 = <function power at 0x7f028d8172e0>(5, 0)
+E    +    where <function power at 0x7f028d8172e0> = <module 'tested_calculator' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/A5/calculator.py'>.power
+____________________________ test_a_extra_05_power _____________________________
+tests/test_a_extra.py:23: in test_a_extra_05_power
+    assert calculator.power(2, -2) == pytest.approx(0.25, rel=1e-9, abs=1e-9)
+E   assert -4 == 0.25 ± 1.0e-09
+E     
+E     comparison failed
+E     Obtained: -4
+E     Expected: 0.25 ± 1.0e-09
+____________________________ test_a_extra_06_power _____________________________
+tests/test_a_extra.py:27: in test_a_extra_06_power
+    with pytest.raises(ZeroDivisionError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE ZeroDivisionError
+=========================== short test summary info ============================
+FAILED tests/test_a_extra.py::test_a_extra_03_power - AssertionError: assert ...
+FAILED tests/test_a_extra.py::test_a_extra_04_power - AssertionError: assert ...
+FAILED tests/test_a_extra.py::test_a_extra_05_power - assert -4 == 0.25 ± 1.0...
+FAILED tests/test_a_extra.py::test_a_extra_06_power - Failed: DID NOT RAISE Z...
+4 failed, 13 passed in 0.05s

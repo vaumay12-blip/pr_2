@@ -1,0 +1,76 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "pytest": "9.1.1",
+    "coverage": "7.16.1",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "stages": {
+    "buggy": {
+      "a": {
+        "tests": 9,
+        "failed": 1,
+        "passed": 8,
+        "failure_names": [
+          "test_a_base_04_subtract"
+        ]
+      },
+      "b": {
+        "tests": 10,
+        "failed": 1,
+        "passed": 9,
+        "failure_names": [
+          "test_b_base_01_is_even"
+        ]
+      },
+      "c": {
+        "tests": 10,
+        "failed": 1,
+        "passed": 9,
+        "failure_names": [
+          "test_c_base_07_celsius_to_fahrenheit"
+        ]
+      }
+    },
+    "fixed": {
+      "a": {
+        "tests": 9,
+        "failed": 0,
+        "passed": 9,
+        "failure_names": []
+      },
+      "b": {
+        "tests": 10,
+        "failed": 0,
+        "passed": 10,
+        "failure_names": []
+      },
+      "c": {
+        "tests": 10,
+        "failed": 0,
+        "passed": 10,
+        "failure_names": []
+      }
+    },
+    "improved": {
+      "a": {
+        "tests": 17,
+        "failed": 0,
+        "passed": 17,
+        "failure_names": []
+      },
+      "b": {
+        "tests": 23,
+        "failed": 0,
+        "passed": 23,
+        "failure_names": []
+      },
+      "c": {
+        "tests": 19,
+        "failed": 0,
+        "passed": 19,
+        "failure_names": []
+      }
+    }
+  }
+}

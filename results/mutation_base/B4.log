@@ -1,0 +1,18 @@
+......FF..                                                               [100%]
+=================================== FAILURES ===================================
+___________________________ test_b_base_07_find_max ____________________________
+tests/test_b_base.py:31: in test_b_base_07_find_max
+    assert number_filter.find_max([3, 1, 8]) == 8
+E   AssertionError: assert 1 == 8
+E    +  where 1 = <function find_max at 0x7f6f37c2eac0>([3, 1, 8])
+E    +    where <function find_max at 0x7f6f37c2eac0> = <module 'tested_number_filter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/B4/number_filter.py'>.find_max
+___________________________ test_b_base_08_find_max ____________________________
+tests/test_b_base.py:35: in test_b_base_08_find_max
+    assert number_filter.find_max([-4, -2, -9]) == -2
+E   AssertionError: assert -9 == -2
+E    +  where -9 = <function find_max at 0x7f6f37c2eac0>([-4, -2, -9])
+E    +    where <function find_max at 0x7f6f37c2eac0> = <module 'tested_number_filter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/B4/number_filter.py'>.find_max
+=========================== short test summary info ============================
+FAILED tests/test_b_base.py::test_b_base_07_find_max - AssertionError: assert...
+FAILED tests/test_b_base.py::test_b_base_08_find_max - AssertionError: assert...
+2 failed, 8 passed in 0.03s

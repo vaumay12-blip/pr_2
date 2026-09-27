@@ -1,0 +1,32 @@
+.......FFF........F                                                      [100%]
+=================================== FAILURES ===================================
+_____________________ test_c_base_08_fahrenheit_to_celsius _____________________
+tests/test_c_base.py:38: in test_c_base_08_fahrenheit_to_celsius
+    assert converter.fahrenheit_to_celsius(32) == 0
+E   AssertionError: assert 35.55555555555556 == 0
+E    +  where 35.55555555555556 = <function fahrenheit_to_celsius at 0x7fbc7f89b380>(32)
+E    +    where <function fahrenheit_to_celsius at 0x7fbc7f89b380> = <module 'tested_converter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/C5/converter.py'>.fahrenheit_to_celsius
+_____________________ test_c_base_09_fahrenheit_to_celsius _____________________
+tests/test_c_base.py:42: in test_c_base_09_fahrenheit_to_celsius
+    assert converter.fahrenheit_to_celsius(212) == 100
+E   AssertionError: assert 135.55555555555554 == 100
+E    +  where 135.55555555555554 = <function fahrenheit_to_celsius at 0x7fbc7f89b380>(212)
+E    +    where <function fahrenheit_to_celsius at 0x7fbc7f89b380> = <module 'tested_converter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/C5/converter.py'>.fahrenheit_to_celsius
+_____________________ test_c_base_10_fahrenheit_to_celsius _____________________
+tests/test_c_base.py:46: in test_c_base_10_fahrenheit_to_celsius
+    assert converter.fahrenheit_to_celsius(-40) == -40
+E   AssertionError: assert -4.444444444444445 == -40
+E    +  where -4.444444444444445 = <function fahrenheit_to_celsius at 0x7fbc7f89b380>(-40)
+E    +    where <function fahrenheit_to_celsius at 0x7fbc7f89b380> = <module 'tested_converter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/C5/converter.py'>.fahrenheit_to_celsius
+____________________ test_c_extra_09_fahrenheit_to_celsius _____________________
+tests/test_c_extra.py:39: in test_c_extra_09_fahrenheit_to_celsius
+    assert converter.fahrenheit_to_celsius(98.6) == 37
+E   AssertionError: assert 72.55555555555556 == 37
+E    +  where 72.55555555555556 = <function fahrenheit_to_celsius at 0x7fbc7f89b380>(98.6)
+E    +    where <function fahrenheit_to_celsius at 0x7fbc7f89b380> = <module 'tested_converter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/C5/converter.py'>.fahrenheit_to_celsius
+=========================== short test summary info ============================
+FAILED tests/test_c_base.py::test_c_base_08_fahrenheit_to_celsius - Assertion...
+FAILED tests/test_c_base.py::test_c_base_09_fahrenheit_to_celsius - Assertion...
+FAILED tests/test_c_base.py::test_c_base_10_fahrenheit_to_celsius - Assertion...
+FAILED tests/test_c_extra.py::test_c_extra_09_fahrenheit_to_celsius - Asserti...
+4 failed, 15 passed in 0.04s

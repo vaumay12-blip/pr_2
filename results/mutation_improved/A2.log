@@ -1,0 +1,18 @@
+...F...........F.                                                        [100%]
+=================================== FAILURES ===================================
+___________________________ test_a_base_04_subtract ____________________________
+tests/test_a_base.py:19: in test_a_base_04_subtract
+    assert calculator.subtract(8, 3) == 5
+E   AssertionError: assert 11 == 5
+E    +  where 11 = <function subtract at 0x7f0ef701b060>(8, 3)
+E    +    where <function subtract at 0x7f0ef701b060> = <module 'tested_calculator' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/A2/calculator.py'>.subtract
+___________________________ test_a_extra_07_subtract ___________________________
+tests/test_a_extra.py:32: in test_a_extra_07_subtract
+    assert calculator.subtract(-3, 2) == -5
+E   AssertionError: assert -1 == -5
+E    +  where -1 = <function subtract at 0x7f0ef701b060>(-3, 2)
+E    +    where <function subtract at 0x7f0ef701b060> = <module 'tested_calculator' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/A2/calculator.py'>.subtract
+=========================== short test summary info ============================
+FAILED tests/test_a_base.py::test_a_base_04_subtract - AssertionError: assert...
+FAILED tests/test_a_extra.py::test_a_extra_07_subtract - AssertionError: asse...
+2 failed, 15 passed in 0.04s

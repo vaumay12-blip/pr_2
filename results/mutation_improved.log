@@ -1,0 +1,17 @@
+A1: add: Add -> Sub: killed
+A2: subtract: Sub -> Add: killed
+A3: multiply: Mult -> Div: killed
+A4: divide: Div -> FloorDiv: killed
+A5: power: Pow -> Mult: killed
+B1: is_even: Eq -> NotEq: killed
+B2: is_odd: NotEq -> Eq: killed
+B3: is_prime: Lt -> LtE: killed
+B4: find_max: Gt -> Lt: killed
+B5: positive_numbers: Gt -> GtE: killed
+C1: meters_to_kilometers: Div -> Mult: killed
+C2: kilometers_to_meters: Mult -> Div: killed
+C3: kilograms_to_grams: 1000 -> 100: killed
+C4: celsius_to_fahrenheit: Add -> Sub: killed
+C5: fahrenheit_to_celsius: Sub -> Add: killed
+C6: celsius_to_fahrenheit: 9 -> 10: killed
+Total: 16; killed: 16; survived: 0; invalid: 0

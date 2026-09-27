@@ -1,0 +1,18 @@
+FF...............                                                        [100%]
+=================================== FAILURES ===================================
+______________________________ test_a_base_01_add ______________________________
+tests/test_a_base.py:7: in test_a_base_01_add
+    assert calculator.add(2, 3) == 5
+E   AssertionError: assert -1 == 5
+E    +  where -1 = <function add at 0x7f2bec0f71a0>(2, 3)
+E    +    where <function add at 0x7f2bec0f71a0> = <module 'tested_calculator' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/A1/calculator.py'>.add
+______________________________ test_a_base_02_add ______________________________
+tests/test_a_base.py:11: in test_a_base_02_add
+    assert calculator.add(-2, 3) == 1
+E   AssertionError: assert -5 == 1
+E    +  where -5 = <function add at 0x7f2bec0f71a0>(-2, 3)
+E    +    where <function add at 0x7f2bec0f71a0> = <module 'tested_calculator' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/A1/calculator.py'>.add
+=========================== short test summary info ============================
+FAILED tests/test_a_base.py::test_a_base_01_add - AssertionError: assert -1 == 5
+FAILED tests/test_a_base.py::test_a_base_02_add - AssertionError: assert -5 == 1
+2 failed, 15 passed in 0.05s

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="17" time="0.045" timestamp="2026-09-27T13:55:28.026003+03:00" hostname="4c855abfa186"><testcase classname="tests.test_a_base" name="test_a_base_01_add" time="0.001" /><testcase classname="tests.test_a_base" name="test_a_base_02_add" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_03_add" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_04_subtract" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_05_multiply" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_06_multiply" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_07_divide" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_08_divide" time="0.000" /><testcase classname="tests.test_a_base" name="test_a_base_09_power" time="0.000" /><testcase classname="tests.test_a_extra" name="test_a_extra_01_divide" time="0.001"><failure message="assert 3 == 3.5 ± 3.5e-09&#10;  &#10;  comparison failed&#10;  Obtained: 3&#10;  Expected: 3.5 ± 3.5e-09">tests/test_a_extra.py:7: in test_a_extra_01_divide
+    assert calculator.divide(7, 2) == pytest.approx(3.5, rel=1e-9, abs=1e-9)
+E   assert 3 == 3.5 ± 3.5e-09
+E     
+E     comparison failed
+E     Obtained: 3
+E     Expected: 3.5 ± 3.5e-09</failure></testcase><testcase classname="tests.test_a_extra" name="test_a_extra_02_divide" time="0.001"><failure message="assert -4 == -3.5 ± 3.5e-09&#10;  &#10;  comparison failed&#10;  Obtained: -4&#10;  Expected: -3.5 ± 3.5e-09">tests/test_a_extra.py:11: in test_a_extra_02_divide
+    assert calculator.divide(-7, 2) == pytest.approx(-3.5, rel=1e-9, abs=1e-9)
+E   assert -4 == -3.5 ± 3.5e-09
+E     
+E     comparison failed
+E     Obtained: -4
+E     Expected: -3.5 ± 3.5e-09</failure></testcase><testcase classname="tests.test_a_extra" name="test_a_extra_03_power" time="0.000" /><testcase classname="tests.test_a_extra" name="test_a_extra_04_power" time="0.001" /><testcase classname="tests.test_a_extra" name="test_a_extra_05_power" time="0.000" /><testcase classname="tests.test_a_extra" name="test_a_extra_06_power" time="0.001" /><testcase classname="tests.test_a_extra" name="test_a_extra_07_subtract" time="0.000" /><testcase classname="tests.test_a_extra" name="test_a_extra_08_multiply" time="0.000" /></testsuite></testsuites>

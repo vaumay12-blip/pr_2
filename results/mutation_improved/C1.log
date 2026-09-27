@@ -1,0 +1,22 @@
+F.............F....                                                      [100%]
+=================================== FAILURES ===================================
+_____________________ test_c_base_01_meters_to_kilometers ______________________
+tests/test_c_base.py:7: in test_c_base_01_meters_to_kilometers
+    assert converter.meters_to_kilometers(1500) == pytest.approx(1.5, rel=1e-9, abs=1e-9)
+E   assert 1500000 == 1.5 ± 1.5e-09
+E     
+E     comparison failed
+E     Obtained: 1500000
+E     Expected: 1.5 ± 1.5e-09
+_____________________ test_c_extra_05_meters_to_kilometers _____________________
+tests/test_c_extra.py:23: in test_c_extra_05_meters_to_kilometers
+    assert converter.meters_to_kilometers(0.5) == pytest.approx(0.0005, rel=1e-9, abs=1e-9)
+E   assert 500.0 == 0.0005 ± 1.0e-09
+E     
+E     comparison failed
+E     Obtained: 500.0
+E     Expected: 0.0005 ± 1.0e-09
+=========================== short test summary info ============================
+FAILED tests/test_c_base.py::test_c_base_01_meters_to_kilometers - assert 150...
+FAILED tests/test_c_extra.py::test_c_extra_05_meters_to_kilometers - assert 5...
+2 failed, 17 passed in 0.04s

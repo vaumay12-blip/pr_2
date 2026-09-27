@@ -1,0 +1,11 @@
+......F...                                                               [100%]
+=================================== FAILURES ===================================
+_____________________ test_c_base_07_celsius_to_fahrenheit _____________________
+tests/test_c_base.py:34: in test_c_base_07_celsius_to_fahrenheit
+    assert converter.celsius_to_fahrenheit(0) == 32
+E   AssertionError: assert -32.0 == 32
+E    +  where -32.0 = <function celsius_to_fahrenheit at 0x7fb926352c00>(0)
+E    +    where <function celsius_to_fahrenheit at 0x7fb926352c00> = <module 'tested_converter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/C4/converter.py'>.celsius_to_fahrenheit
+=========================== short test summary info ============================
+FAILED tests/test_c_base.py::test_c_base_07_celsius_to_fahrenheit - Assertion...
+1 failed, 9 passed in 0.03s

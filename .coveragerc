@@ -1,0 +1,7 @@
+[run]
+branch = True
+include = */calculator.py, */number_filter.py, */converter.py
+
+[report]
+show_missing = True
+precision = 2

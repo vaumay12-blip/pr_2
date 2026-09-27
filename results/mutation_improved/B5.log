@@ -1,0 +1,13 @@
+......................F                                                  [100%]
+=================================== FAILURES ===================================
+_______________________ test_b_extra_13_positive_numbers _______________________
+tests/test_b_extra.py:56: in test_b_extra_13_positive_numbers
+    assert number_filter.positive_numbers([-1, 0, 2, 2]) == [2, 2]
+E   assert [0, 2, 2] == [2, 2]
+E     
+E     At index 0 diff: 0 != 2
+E     Left contains one more item: 2
+E     Use -v to get more diff
+=========================== short test summary info ============================
+FAILED tests/test_b_extra.py::test_b_extra_13_positive_numbers - assert [0, 2...
+1 failed, 22 passed in 0.05s

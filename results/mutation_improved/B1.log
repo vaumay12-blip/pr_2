@@ -1,0 +1,32 @@
+F..............FFF.....                                                  [100%]
+=================================== FAILURES ===================================
+____________________________ test_b_base_01_is_even ____________________________
+tests/test_b_base.py:7: in test_b_base_01_is_even
+    assert number_filter.is_even(4) is True
+E   AssertionError: assert False is True
+E    +  where False = <function is_even at 0x7f9a0dfef740>(4)
+E    +    where <function is_even at 0x7f9a0dfef740> = <module 'tested_number_filter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/B1/number_filter.py'>.is_even
+___________________________ test_b_extra_06_is_even ____________________________
+tests/test_b_extra.py:27: in test_b_extra_06_is_even
+    assert number_filter.is_even(0) is True
+E   AssertionError: assert False is True
+E    +  where False = <function is_even at 0x7f9a0dfef740>(0)
+E    +    where <function is_even at 0x7f9a0dfef740> = <module 'tested_number_filter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/B1/number_filter.py'>.is_even
+___________________________ test_b_extra_07_is_even ____________________________
+tests/test_b_extra.py:31: in test_b_extra_07_is_even
+    assert number_filter.is_even(-4) is True
+E   AssertionError: assert False is True
+E    +  where False = <function is_even at 0x7f9a0dfef740>(-4)
+E    +    where <function is_even at 0x7f9a0dfef740> = <module 'tested_number_filter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/B1/number_filter.py'>.is_even
+___________________________ test_b_extra_08_is_even ____________________________
+tests/test_b_extra.py:35: in test_b_extra_08_is_even
+    assert number_filter.is_even(3) is False
+E   AssertionError: assert True is False
+E    +  where True = <function is_even at 0x7f9a0dfef740>(3)
+E    +    where <function is_even at 0x7f9a0dfef740> = <module 'tested_number_filter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/B1/number_filter.py'>.is_even
+=========================== short test summary info ============================
+FAILED tests/test_b_base.py::test_b_base_01_is_even - AssertionError: assert ...
+FAILED tests/test_b_extra.py::test_b_extra_06_is_even - AssertionError: asser...
+FAILED tests/test_b_extra.py::test_b_extra_07_is_even - AssertionError: asser...
+FAILED tests/test_b_extra.py::test_b_extra_08_is_even - AssertionError: asser...
+4 failed, 19 passed in 0.06s

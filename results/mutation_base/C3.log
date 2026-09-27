@@ -1,0 +1,11 @@
+....F.....                                                               [100%]
+=================================== FAILURES ===================================
+______________________ test_c_base_05_kilograms_to_grams _______________________
+tests/test_c_base.py:25: in test_c_base_05_kilograms_to_grams
+    assert converter.kilograms_to_grams(2) == 2000
+E   AssertionError: assert 200 == 2000
+E    +  where 200 = <function kilograms_to_grams at 0x7fd7051beb60>(2)
+E    +    where <function kilograms_to_grams at 0x7fd7051beb60> = <module 'tested_converter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/C3/converter.py'>.kilograms_to_grams
+=========================== short test summary info ============================
+FAILED tests/test_c_base.py::test_c_base_05_kilograms_to_grams - AssertionErr...
+1 failed, 9 passed in 0.03s

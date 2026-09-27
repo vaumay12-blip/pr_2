@@ -1,0 +1,27 @@
+..........FFF......                                                      [100%]
+=================================== FAILURES ===================================
+____________________ test_c_extra_01_celsius_to_fahrenheit _____________________
+tests/test_c_extra.py:7: in test_c_extra_01_celsius_to_fahrenheit
+    assert converter.celsius_to_fahrenheit(100) == 212
+E   AssertionError: assert 232.0 == 212
+E    +  where 232.0 = <function celsius_to_fahrenheit at 0x7f258e59b2e0>(100)
+E    +    where <function celsius_to_fahrenheit at 0x7f258e59b2e0> = <module 'tested_converter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/C6/converter.py'>.celsius_to_fahrenheit
+____________________ test_c_extra_02_celsius_to_fahrenheit _____________________
+tests/test_c_extra.py:11: in test_c_extra_02_celsius_to_fahrenheit
+    assert converter.celsius_to_fahrenheit(-40) == -40
+E   AssertionError: assert -48.0 == -40
+E    +  where -48.0 = <function celsius_to_fahrenheit at 0x7f258e59b2e0>(-40)
+E    +    where <function celsius_to_fahrenheit at 0x7f258e59b2e0> = <module 'tested_converter' from '/workspace/scratch/00b3d1255b64/deliverables/code/results/mutants/C6/converter.py'>.celsius_to_fahrenheit
+____________________ test_c_extra_03_celsius_to_fahrenheit _____________________
+tests/test_c_extra.py:15: in test_c_extra_03_celsius_to_fahrenheit
+    assert converter.celsius_to_fahrenheit(37) == pytest.approx(98.6, rel=1e-9, abs=1e-9)
+E   assert 106.0 == 98.6 ± 9.9e-08
+E     
+E     comparison failed
+E     Obtained: 106.0
+E     Expected: 98.6 ± 9.9e-08
+=========================== short test summary info ============================
+FAILED tests/test_c_extra.py::test_c_extra_01_celsius_to_fahrenheit - Asserti...
+FAILED tests/test_c_extra.py::test_c_extra_02_celsius_to_fahrenheit - Asserti...
+FAILED tests/test_c_extra.py::test_c_extra_03_celsius_to_fahrenheit - assert ...
+3 failed, 16 passed in 0.05s
